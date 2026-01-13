@@ -1,0 +1,17 @@
+<!ELEMENT empresa (departamento+)>
+<!ATTLIST empresa nombre CDATA #REQUIRED>
+<!ATTLIST empresa pais CDATA #REQUIRED>
+
+<!ELEMENT departamento (nombre,empleado+)>
+<!ATTLIST departamento id CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT empleado (nombre+, edad, email, salario)>
+<!ATTLIST empleado id CDATA #REQUIRED>
+<!ATTLIST empleado tipo CDATA #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ATTLIST salario moneda CDATA #REQUIRED>

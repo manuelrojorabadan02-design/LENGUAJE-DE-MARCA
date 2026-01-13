@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE empresa SYSTEM "ejercicio1.xsd">
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+  xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+
+<empresa nombre="TechNova" pais="España"></empresa>
+  <departamento id="D01">
+    <nombre>Desarrollo</nombre>
+    <empleado id="E100" tipo="fijo">
+      <nombre>Lucía Martínez</nombre>
+      <edad>29</edad>
+      <email>lucia.martinez@technova.es</email>
+      <salario moneda="EUR">28000</salario>
+    </empleado>
+    <empleado id="E101" tipo="temporal">
+      <nombre>Javier Ramos</nombre>
+      <edad>22</edad>
+      <email>javier.ramos@technova.es</email>
+      <salario moneda="EUR">18000</salario>
+    </empleado>
+  </departamento>
+  <departamento id="D02">
+    <nombre>Marketing</nombre>
+    <empleado id="E200" tipo="fijo">
+      <nombre>Ana Torres</nombre>
+      <edad>34</edad>
+      <email>ana.torres@technova.es</email>
+      <salario moneda="EUR">32000</salario>
+    </empleado>
+  </departamento>
+</empresa>

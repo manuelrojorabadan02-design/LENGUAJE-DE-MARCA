@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Panel Analítico: Geografía Humana - Prof. Ortega Ortega 🌍</title>
+    
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; }
+        .nav-link-btn {
+            background-color: #f0f0f0; color: #333; padding: 8px 15px;
+            border: 1px solid #ccc; text-decoration: none; margin: 5px;
+            display: inline-block; cursor: pointer;
+        }
+        .nav-link-btn:hover { background-color: #ddd; }
+        /* LAYOUT: Estilo para las secciones principales */
+        .seccion-panel {
+            padding: 30px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #eee;
+            clear: both; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: navy; text-align: center; background-color: #e6f7ff; padding: 15px;">
+        Panel de Análisis: Prof. José Enrique Ortega Ortega 📊
+    </h1>
+    <p style="text-align: center; margin-bottom: 20px;">
+        <a href="#inicio" class="nav-link-btn">Introducción</a>
+        <a href="#datos-clave" class="nav-link-btn">Ver Datos</a>
+        <a href="#referencias-ortega" class="nav-link-btn">Bibliografía</a>
+    </p>
+    <hr style="border: 1px solid #ddd;">
+    
+    <div id="inicio" class="seccion-panel" style="background-color: #f0f8ff;">
+        
+        <h2>Trabajo y Alcance de la Geografía Humana</h2>
+        <p>
+            Esta página resume los puntos clave y los datos analizados por el profesor 
+            <strong>José Enrique Ortega Ortega</strong> en sus recientes estudios sobre 
+            la **reconfiguración urbana y territorial**.
+        </p>
+
+        <h3 style="color: #007bff;">Visualización de Flujos (Iframe)</h3>
+        <iframe 
+            src="https://www.ejemplo.com/mapa_flujos.html" 
+            style="width: 100%; height: 300px; border: 1px solid #007bff;"
+            title="Visualización de Flujos Migratorios"
+        >
+            Su navegador no soporta iframes.
+        </iframe>
+        
+        <button onclick="window.location.href='#datos-clave';" 
+                style="background-color: #28a745; color: white; padding: 10px; border: none; cursor: pointer; margin-top: 15px;">
+            Ir a la Tabla de Datos
+        </button>
+        <button onclick="window.location.href='#referencias-ortega';"
+                style="background-color: #ffc107; color: black; padding: 10px; border: none; cursor: pointer;">
+            Ver Bibliografía Clave
+        </button>
+    </div>
+
+    <hr>
+
+    <div id="datos-clave" class="seccion-panel">
+        
+        <h2 style="color: #007bff;">Tabla de Variables de Estudio (Datos Sintéticos)</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <thead>
+                <tr style="background-color: #ddd;">
+                    <th rowspan="2" style="border: 1px solid black; padding: 8px;">Área Geográfica</th>
+                    <th colspan="2" style="border: 1px solid black; padding: 8px;">Indicadores de Densidad</th>
+                    <th colspan="2" style="border: 1px solid black; padding: 8px;">Tasa de Crecimiento (%)</th>
+                </tr>
+                <tr style="background-color: #eee;">
+                    <th style="border: 1px solid black; padding: 8px;">Población (hab/km&sup2;)</th> 
+                    <th style="border: 1px solid black; padding: 8px;">Vivienda (unidades/km&sup2;)</th>
+                    <th style="border: 1px solid black; padding: 8px;">Anual</th>
+                    <th style="border: 1px solid black; padding: 8px;">Decenal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid black; padding: 8px; font-weight: bold;">Zona Central</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">4500</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">1800</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">0.5</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">4.8</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="border: 1px solid black; padding: 8px; font-weight: bold; background-color: #fce4ec;">Región Periférica</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">950</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">400</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">1.2</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">11.5</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">780</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">320</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">1.5</td>
+                    <td style="border: 1px solid black; padding: 8px; text-align: center;">14.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <div id="referencias-ortega" class="seccion-panel" style="background-color: #f9f9f9;">
+
+        <h2 style="color: #d9534f;">Referencias Clave de José E. Ortega &#128218;</h2>
+        
+        <ol>
+            <li>
+                <a href="documentos/territorio_globalizacion.pdf" target="_blank">
+                    <strong style="color: navy;">El Territorio de la Globalización y Sus Desafíos</strong>
+                </a>
+                 &mdash; **Obra fundamental de José Enrique Ortega Ortega.**
+            </li>
+            <li>
+                *Análisis Demográfico y Población Activa: Caso Europeo.* Publicado en 2021.
+            </li>
+            <li>
+                Modelos de Desarrollo Urbano en la Periferia de Madrid (1980-2020).
+            </li>
+        </ol>
+
+        <p style="text-align: center; margin-top: 20px;">
+            ¡Gracias por replicar este ejercicio! &#9989;
+        </p>
+
+    </div>
+
+</body>
+</html>

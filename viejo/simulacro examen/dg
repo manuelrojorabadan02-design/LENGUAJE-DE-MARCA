@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  revistaEldenRing [
+<!ELEMENT revistaEldenRing (guerrero+)>
+<!ATTLIST revirevistaEldenRing edicion (#CDATA)>
+<!ATTLIST revistaEldenRing año (#CDATA)>
+<!ATTLIST revistaEldenRing tema (#CDATA)>
+<!ELEMENT guerrero (nombre,raza,habilidades)>
+<!ATTLIST  guerrero codigo (#CDATA)>
+<!ATTLIST guerrero clase (#CDATA)>
+<!ATTLIST guerrero nivel (#CDATA)>
+<!ATTLIST guerrero armaPrincipal (#CDATA)>
+<!ELEMENT nombre #PCDATA>
+<!ELEMENT raza #PCDATA>
+<!ELEMENT habilidades (habilidad*)>
+<!ELEMENT habilidad>
+<!ATTLIST habilidad tipo (#CDATA)>
+<!ATTLIST habilidad poder (#CDATA)>
+]>
+<revistaEldenRing edicion="Vol.3" año="2025" tema="Guerreros">
+  <guerrero codigo="G001" clase="Samurai" nivel="99" armaPrincipal="katana">
+    <nombre>Ranni</nombre>
+    <raza>Humano</raza>
+    <habilidades>
+      <habilidad tipo="magia" poder="85">Luz lunar</habilidad>
+      <habilidad tipo="combate" poder="92">Corte rápido</habilidad>
+    </habilidades>
+  </guerrero>
+  <guerrero codigo="G002" clase="Caballero" nivel="85" armaPrincipal="espadaLarga">
+    <nombre>Godrick</nombre>
+    <raza>Semidiós</raza>
+    <habilidades>
+      <habilidad tipo="combate" poder="95">Golpe divino</habilidad>
+    </habilidades>
+  </guerrero>
+</revistaEldenRing>
+
+
+// no se como se pone un xsd interno asi que te lo hago acontinuación
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLNSchema">
+	<xs:element name="revistaEldenRing">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="guerrero" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="string"/>
+							<xs:element name="raza" type="string"/>
+							<xs:element name="habilidades">
+								<xs:complexType>
+									<xs:sequence>
+									<xs:element name="habilidad" maxOccurs="unbounded">
+									</xs:element>
+									</xs:sequence>
+									<xs:atribute name="tipo" type="xs:string"/>
+									<xs:atribute name="poder" type="xs:int"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<xs:schema>
+

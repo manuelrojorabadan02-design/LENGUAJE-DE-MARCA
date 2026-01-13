@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<torneo nombre="mundial_tennis" fecha_inicio="25-05-2025" fecha_fin="30-05-2025">
+    <partidos>
+        <partido id="1">
+            <jugadores>
+                <jugador id="1">
+                    <nombre>Carlos Mendez</nombre>
+                    <edad>24</edad>
+                    <nacionalidad>España</nacionalidad>
+                </jugador>
+                <jugador id="2">
+                    <nombre>Lucas Ferreira</nombre>
+                    <edad>27</edad>
+                    <nacionalidad>Brasil</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="1">
+                <set id="1"><set>Carlos 6-4 Lucas</set></set>
+                <set id="2"><set>Lucas 7-5 Carlos</set></set>
+                <set id="3"><set>Carlos 6-3 Lucas</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="2">
+            <jugadores>
+                <jugador id="3">
+                    <nombre>David Johnson</nombre>
+                    <edad>29</edad>
+                    <nacionalidad>EE.UU.</nacionalidad>
+                </jugador>
+                <jugador id="4">
+                    <nombre>Matteo Rossi</nombre>
+                    <edad>23</edad>
+                    <nacionalidad>Italia</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="2">
+                <set id="1"><set>David 6-3 Matteo</set></set>
+                <set id="2"><set>Matteo 7-6 David</set></set>
+                <set id="3"><set>Matteo 6-4 David</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="3">
+            <jugadores>
+                <jugador id="5">
+                    <nombre>Tomas Novak</nombre>
+                    <edad>25</edad>
+                    <nacionalidad>Republica Checa</nacionalidad>
+                </jugador>
+                <jugador id="6">
+                    <nombre>Pierre Dubois</nombre>
+                    <edad>28</edad>
+                    <nacionalidad>Francia</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="3">
+                <set id="1"><set>Pierre 7-6 Tomas</set></set>
+                <set id="2"><set>Tomas 6-3 Pierre</set></set>
+                <set id="3"><set>Tomas 7-5 Pierre</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="4">
+            <jugadores>
+                <jugador id="7">
+                    <nombre>Kenji Sato</nombre>
+                    <edad>26</edad>
+                    <nacionalidad>Japón</nacionalidad>
+                </jugador>
+                <jugador id="8">
+                    <nombre>Max Müller</nombre>
+                    <edad>30</edad>
+                    <nacionalidad>Alemania</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="4">
+                <set id="1"><set>Kenji 6-2 Max</set></set>
+                <set id="2"><set>Max 6-4 Kenji</set></set>
+                <set id="3"><set>Kenji 7-6 Max</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="5">
+            <jugadores>
+                <jugador id="9">
+                    <nombre>Andrei Popov</nombre>
+                    <edad>24</edad>
+                    <nacionalidad>Rusia</nacionalidad>
+                </jugador>
+                <jugador id="10">
+                    <nombre>Sebastian Torres</nombre>
+                    <edad>22</edad>
+                    <nacionalidad>Argentina</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="5">
+                <set id="1"><set>Sebastian 4-6 Andrei</set></set>
+                <set id="2"><set>Sebastian 6-2 Andrei</set></set>
+                <set id="3"><set>Sebastian 7-5 Andrei</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="6">
+            <jugadores>
+                <jugador id="11">
+                    <nombre>Oliver Smith</nombre>
+                    <edad>31</edad>
+                    <nacionalidad>Reino Unido</nacionalidad>
+                </jugador>
+                <jugador id="12">
+                    <nombre>Diego Ramirez</nombre>
+                    <edad>26</edad>
+                    <nacionalidad>México</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="6">
+                <set id="1"><set>Oliver 6-4 Diego</set></set>
+                <set id="2"><set>Diego 7-5 Oliver</set></set>
+                <set id="3"><set>Diego 6-3 Oliver</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="7">
+            <jugadores>
+                <jugador id="13">
+                    <nombre>Jan Kowalski</nombre>
+                    <edad>27</edad>
+                    <nacionalidad>Polonia</nacionalidad>
+                </jugador>
+                <jugador id="14">
+                    <nombre>Mark Evans</nombre>
+                    <edad>28</edad>
+                    <nacionalidad>Australia</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="7">
+                <set id="1"><set>Jan 6-7 Mark</set></set>
+                <set id="2"><set>Jan 6-4 Mark</set></set>
+                <set id="3"><set>Jan 6-3 Mark</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="8">
+            <jugadores>
+                <jugador id="15">
+                    <nombre>Ali Hassan</nombre>
+                    <edad>29</edad>
+                    <nacionalidad>Egipto</nacionalidad>
+                </jugador>
+                <jugador id="16">
+                    <nombre>Samuel Brown</nombre>
+                    <edad>25</edad>
+                    <nacionalidad>Canadá</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="8">
+                <set id="1"><set>Ali 3-6 Samuel</set></set>
+                <set id="2"><set>Ali 6-4 Samuel</set></set>
+                <set id="3"><set>Ali 7-6 Samuel</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="9">
+            <jugadores>
+                <jugador id="17">
+                    <nombre>Hugo Martinez</nombre>
+                    <edad>21</edad>
+                    <nacionalidad>Chile</nacionalidad>
+                </jugador>
+                <jugador id="18">
+                    <nombre>Nikos Papadopoulos</nombre>
+                    <edad>32</edad>
+                    <nacionalidad>Grecia</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="9">
+                <set id="1"><set>Nikos 6-2 Hugo</set></set>
+                <set id="2"><set>Hugo 7-6 Nikos</set></set>
+                <set id="3"><set>Hugo 6-4 Nikos</set></set>
+            </resultado>
+        </partido>
+
+        <partido id="10">
+            <jugadores>
+                <jugador id="19">
+                    <nombre>Jonas Eriksen</nombre>
+                    <edad>24</edad>
+                    <nacionalidad>Noruega</nacionalidad>
+                </jugador>
+                <jugador id="20">
+                    <nombre>Pedro Silva</nombre>
+                    <edad>27</edad>
+                    <nacionalidad>Portugal</nacionalidad>
+                </jugador>
+            </jugadores>
+            <resultado id="10">
+                <set id="1"><set>Pedro 6-3 Jonas</set></set>
+                <set id="2"><set>Jonas 6-4 Pedro</set></set>
+                <set id="3"><set>Pedro 7-5 Jonas</set></set>
+            </resultado>
+        </partido>
+    </partidos>
+</torneo>

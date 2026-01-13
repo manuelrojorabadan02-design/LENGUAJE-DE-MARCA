@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+<!ELEMENT empresa (edificio+)>
+<!ATTLIST empresa nombre CDATA #REQUIRED>
+<!ELEMENT edificio (direccion, numero_plantas, planta+)>
+<!ATTLIST edificio nombre CDATA #REQUIRED>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT numero_plantas (#PCDATA)>
+<!ELEMENT planta (empleado+)>
+<!ATTLIST planta numero CDATA #REQUIRED>
+<!ATTLIST planta metros_cuadrados CDATA #REQUIRED>
+<!ELEMENT empleado (puesto, nombre, dni, email, extension)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+]>
+<empresa nombre="TechSolutions S.A.">
+
+    <edificio nombre="Sede Central">
+        <direccion>Calle Mayor 120, Madrid</direccion>
+        <numero_plantas>3</numero_plantas>
+
+        <planta numero="1" metros_cuadrados="350">
+            <empleado>
+                <puesto>Recepcionista</puesto>
+                <nombre>Ana López</nombre>
+                <dni>45897632M</dni>
+                <email>ana.lopez@techsolutions.com</email>
+                <extension>101</extension>
+            </empleado>
+            <empleado>
+                <puesto>Asistente Administrativo</puesto>
+                <nombre>David Gómez</nombre>
+                <dni>47893521T</dni>
+                <email>david.gomez@techsolutions.com</email>
+                <extension>102</extension>
+            </empleado>
+            <empleado>
+                <puesto>Seguridad</puesto>
+                <nombre>Raúl Sánchez</nombre>
+                <dni>50123487L</dni>
+                <email>raul.sanchez@techsolutions.com</email>
+                <extension>103</extension>
+            </empleado>
+            <empleado>
+                <puesto>Limpieza</puesto>
+                <nombre>Laura Fernández</nombre>
+                <dni>51239874Z</dni>
+                <email>laura.fernandez@techsolutions.com</email>
+                <extension>104</extension>
+            </empleado>
+            <empleado>
+                <puesto>Mensajería</puesto>
+                <nombre>Mario Ortega</nombre>
+                <dni>48975621Q</dni>
+                <email>mario.ortega@techsolutions.com</email>
+                <extension>105</extension>
+            </empleado>
+        </planta>
+
+        <planta numero="2" metros_cuadrados="400">
+            <empleado>
+                <puesto>Desarrollador Backend</puesto>
+                <nombre>Lucía Pérez</nombre>
+                <dni>47659832K</dni>
+                <email>lucia.perez@techsolutions.com</email>
+                <extension>201</extension>
+            </empleado>
+            <empleado>
+                <puesto>Desarrollador Frontend</puesto>
+                <nombre>Sergio Martín</nombre>
+                <dni>49753126D</dni>
+                <email>sergio.martin@techsolutions.com</email>
+                <extension>202</extension>
+            </empleado>
+            <empleado>
+                <puesto>Diseñador UX/UI</puesto>
+                <nombre>Carla Jiménez</nombre>
+                <dni>47586312A</dni>
+                <email>carla.jimenez@techsolutions.com</email>
+                <extension>203</extension>
+            </empleado>
+            <empleado>
+                <puesto>Tester QA</puesto>
+                <nombre>José Ramos</nombre>
+                <dni>48123659B</dni>
+                <email>jose.ramos@techsolutions.com</email>
+                <extension>204</extension>
+            </empleado>
+            <empleado>
+                <puesto>Analista de Datos</puesto>
+                <nombre>Patricia Vega</nombre>
+                <dni>48236412F</dni>
+                <email>patricia.vega@techsolutions.com</email>
+                <extension>205</extension>
+            </empleado>
+        </planta>
+
+        <planta numero="3" metros_cuadrados="300">
+            <empleado>
+                <puesto>Director General</puesto>
+                <nombre>Manuel Torres</nombre>
+                <dni>45632187N</dni>
+                <email>manuel.torres@techsolutions.com</email>
+                <extension>301</extension>
+            </empleado>
+            <empleado>
+                <puesto>Secretaria de Dirección</puesto>
+                <nombre>Beatriz Ruiz</nombre>
+                <dni>49871235S</dni>
+                <email>beatriz.ruiz@techsolutions.com</email>
+                <extension>302</extension>
+            </empleado>
+            <empleado>
+                <puesto>Contable</puesto>
+                <nombre>Ignacio Molina</nombre>
+                <dni>50213489P</dni>
+                <email>ignacio.molina@techsolutions.com</email>
+                <extension>303</extension>
+            </empleado>
+            <empleado>
+                <puesto>Recursos Humanos</puesto>
+                <nombre>Rosa Gil</nombre>
+                <dni>51234567Y</dni>
+                <email>rosa.gil@techsolutions.com</email>
+                <extension>304</extension>
+            </empleado>
+            <empleado>
+                <puesto>IT Manager</puesto>
+                <nombre>Daniel Navarro</nombre>
+                <dni>52345678R</dni>
+                <email>daniel.navarro@techsolutions.com</email>
+                <extension>305</extension>
+            </empleado>
+        </planta>
+    </edificio>
+
+    <edificio nombre="Oficina Norte">
+        <direccion>Avenida de Europa 45, Barcelona</direccion>
+        <numero_plantas>3</numero_plantas>
+
+        <planta numero="1" metros_cuadrados="280">
+            <empleado>
+                <puesto>Recepcionista</puesto>
+                <nombre>Andrea Díaz</nombre>
+                <dni>47283912T</dni>
+                <email>andrea.diaz@techsolutions.com</email>
+                <extension>401</extension>
+            </empleado>
+            <empleado>
+                <puesto>Administrativo</puesto>
+                <nombre>Hugo Ramos</nombre>
+                <dni>49871234U</dni>
+                <email>hugo.ramos@techsolutions.com</email>
+                <extension>402</extension>
+            </empleado>
+            <empleado>
+                <puesto>Soporte Técnico</puesto>
+                <nombre>Luis Romero</nombre>
+                <dni>47891234O</dni>
+                <email>luis.romero@techsolutions.com</email>
+                <extension>403</extension>
+            </empleado>
+            <empleado>
+                <puesto>Limpieza</puesto>
+                <nombre>Sandra León</nombre>
+                <dni>50123987G</dni>
+                <email>sandra.leon@techsolutions.com</email>
+                <extension>404</extension>
+            </empleado>
+            <empleado>
+                <puesto>Seguridad</puesto>
+                <nombre>Álvaro Pérez</nombre>
+                <dni>51123487V</dni>
+                <email>alvaro.perez@techsolutions.com</email>
+                <extension>405</extension>
+            </empleado>
+        </planta>
+
+        <planta numero="2" metros_cuadrados="350">
+            <empleado>
+                <puesto>Desarrollador Java</puesto>
+                <nombre>Camila Ortega</nombre>
+                <dni>49182345H</dni>
+                <email>camila.ortega@techsolutions.com</email>
+                <extension>501</extension>
+            </empleado>
+            <empleado>
+                <puesto>Desarrollador Python</puesto>
+                <nombre>Iván Torres</nombre>
+                <dni>48236791W</dni>
+                <email>ivan.torres@techsolutions.com</email>
+                <extension>502</extension>
+            </empleado>
+            <empleado>
+                <puesto>Diseñador Gráfico</puesto>
+                <nombre>Silvia Cabrera</nombre>
+                <dni>47281923E</dni>
+                <email>silvia.cabrera@techsolutions.com</email>
+                <extension>503</extension>
+            </empleado>
+            <empleado>
+                <puesto>Tester</puesto>
+                <nombre>Ricardo Peña</nombre>
+                <dni>48653217A</dni>
+                <email>ricardo.pena@techsolutions.com</email>
+                <extension>504</extension>
+            </empleado>
+            <empleado>
+                <puesto>Analista Funcional</puesto>
+                <nombre>Elena Blanco</nombre>
+                <dni>48975312C</dni>
+                <email>elena.blanco@techsolutions.com</email>
+                <extension>505</extension>
+            </empleado>
+        </planta>
+
+        <planta numero="3" metros_cuadrados="320">
+            <empleado>
+                <puesto>Director Regional</puesto>
+                <nombre>Jorge Medina</nombre>
+                <dni>47812354R</dni>
+                <email>jorge.medina@techsolutions.com</email>
+                <extension>601</extension>
+            </empleado>
+            <empleado>
+                <puesto>Recursos Humanos</puesto>
+                <nombre>Sofía Lara</nombre>
+                <dni>48963125Z</dni>
+                <email>sofia.lara@techsolutions.com</email>
+                <extension>602</extension>
+            </empleado>
+            <empleado>
+                <puesto>Contable</puesto>
+                <nombre>Carlos Vega</nombre>
+                <dni>47658931N</dni>
+                <email>carlos.vega@techsolutions.com</email>
+                <extension>603</extension>
+            </empleado>
+            <empleado>
+                <puesto>Secretaria</puesto>
+                <nombre>Marta Díaz</nombre>
+                <dni>48123645B</dni>
+                <email>marta.diaz@techsolutions.com</email>
+                <extension>604</extension>
+            </empleado>
+            <empleado>
+                <puesto>Responsable IT</puesto>
+                <nombre>Fernando Ruiz</nombre>
+                <dni>49231864X</dni>
+                <email>fernando.ruiz@techsolutions.com</email>
+                <extension>605</extension>
+            </empleado>
+        </planta>
+    </edificio>
+
+</empresa>

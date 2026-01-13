@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cluster SYSTEM "ex_2.DTD">
+
+<cluster nombre="Cluster_Principal">
+    
+    <nodo nombre="Nodo1" ip="192.168.1.1">
+        <maquina nombre="VM1-Nodo1" sistema_operativo="Ubuntu 22.04">
+            <interfaz ip="10.0.0.1" mac="00:1A:2B:3C:4D:01"/>
+        </maquina>
+        <maquina nombre="VM2-Nodo1" sistema_operativo="Windows Server 2022">
+            <interfaz ip="10.0.0.2" mac="00:1A:2B:3C:4D:02"/>
+            <interfaz ip="172.16.0.2" mac="00:1A:2B:3C:4D:12"/>
+        </maquina>
+        <maquina nombre="VM3-Nodo1" sistema_operativo="Debian 12">
+            <interfaz ip="10.0.0.3" mac="00:1A:2B:3C:4D:03"/>
+        </maquina>
+    </nodo>
+
+    <nodo nombre="Nodo2" ip="192.168.1.2">
+        <maquina nombre="VM1-Nodo2" sistema_operativo="Ubuntu 22.03">
+            <interfaz ip="10.0.1.1" mac="00:1A:2B:3C:4D:04"/>
+        </maquina>
+        <maquina nombre="VM2-Nodo2" sistema_operativo="Ubuntu 20.04">
+            <interfaz ip="10.0.1.2" mac="00:1A:2B:3C:4D:05"/>
+        </maquina>
+        <maquina nombre="VM3-Nodo2" sistema_operativo="Windows 11">
+            <interfaz ip="10.0.1.3" mac="00:1A:2B:3C:4D:06"/>
+            <interfaz ip="172.16.1.3" mac="00:1A:2B:3C:4D:16"/>
+        </maquina>
+    </nodo>
+
+    <nodo nombre="Nodo3" ip="192.168.1.3">
+        <maquina nombre="VM1-Nodo3" sistema_operativo="Rocky Linux 9">
+            <interfaz ip="10.0.2.1" mac="00:1A:2B:3C:4D:07"/>
+        </maquina>
+        <maquina nombre="VM2-Nodo3" sistema_operativo="Windows 10">
+            <interfaz ip="10.0.2.2" mac="00:1A:2B:3C:4D:08"/>
+        </maquina>
+        <maquina nombre="VM3-Nodo3" sistema_operativo="AlmaLinux 9">
+            <interfaz ip="10.0.2.3" mac="00:1A:2B:3C:4D:09"/>
+        </maquina>
+    </nodo>
+
+    <nodo nombre="Nodo4" ip="192.168.1.4">
+        <maquina nombre="VM1-Nodo4" sistema_operativo="Fedora 40">
+            <interfaz ip="10.0.3.1" mac="00:1A:2B:3C:4D:10"/>
+        </maquina>
+        <maquina nombre="VM2-Nodo4" sistema_operativo="Kali Linux">
+            <interfaz ip="10.0.3.2" mac="00:1A:2B:3C:4D:11"/>
+        </maquina>
+        <maquina nombre="VM3-Nodo4" sistema_operativo="Windows Server 2019">
+            <interfaz ip="10.0.3.3" mac="00:1A:2B:3C:4D:13"/>
+            <interfaz ip="172.16.3.3" mac="00:1A:2B:3C:4D:23"/>
+        </maquina>
+    </nodo>
+
+    <nodo nombre="Nodo5" ip="192.168.1.5">
+        <maquina nombre="VM1-Nodo5" sistema_operativo="Ubuntu 24.04">
+            <interfaz ip="10.0.4.1" mac="00:1A:2B:3C:4D:14"/>
+        </maquina>
+        <maquina nombre="VM2-Nodo5" sistema_operativo="Debian 11">
+            <interfaz ip="10.0.4.2" mac="00:1A:2B:3C:4D:15"/>
+        </maquina>
+        <maquina nombre="VM3-Nodo5" sistema_operativo="Windows Server 2022">
+            <interfaz ip="10.0.4.3" mac="00:1A:2B:3C:4D:17"/>
+        </maquina>
+    </nodo>
+
+</cluster>

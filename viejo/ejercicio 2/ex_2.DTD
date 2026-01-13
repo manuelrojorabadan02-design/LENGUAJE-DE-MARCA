@@ -1,0 +1,6 @@
+<!DOCTYPE torneo [
+<!ELEMENT cluster (nodo+)>
+<!ELEMENT nodo (maquina+)>
+<!ELEMENT maquina (interfaz+)>
+<!ELEMENT interfaz EMPTY>
+]

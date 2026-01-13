@@ -1,0 +1,12 @@
+
+<!ELEMENT cluster (nodo+)>
+<!ATTLIST cluster nombre CDATA #REQUIRED>
+<!ELEMENT nodo (maquina+)>
+<!ATTLIST nodo nombre CDATA #REQUIRED>
+<!ATTLIST nodo ip CDATA #REQUIRED>
+<!ELEMENT maquina (interfaz+)>
+<!ATTLIST maquina nombre CDATA #REQUIRED>
+<!ATTLIST maquina sistema_operativo CDATA #REQUIRED>
+<!ELEMENT interfaz EMPTY>
+<!ATTLIST interfaz ip CDATA #REQUIRED>
+<!ATTLIST interfaz mac CDATA #REQUIRED>
