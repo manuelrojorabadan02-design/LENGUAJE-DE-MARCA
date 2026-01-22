@@ -37,5 +37,11 @@ color: #ff0000;
 
 .nota {
 background-color: #ffdf2c62;
+}
 
+footer{
+  color: #666;
+margin-bottom: 30px;
+font-style: italic;
+text-align: center;  
 }
