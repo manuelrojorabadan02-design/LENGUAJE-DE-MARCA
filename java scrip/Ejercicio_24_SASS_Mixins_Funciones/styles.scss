@@ -1,0 +1,58 @@
+// 1. Mixin de Estructura: Solo define el "esqueleto"
+@mixin btn-structure {
+    padding: 10px 20px;
+    border-radius: 8px;   // Un poco más moderno
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+// 2. Mixin de Tema: Define los colores y el estado hover
+@mixin btn-theme($color) {
+    background-color: $color;
+    color: white; // Puedes usar una lógica para blanco o negro según el brillo
+    
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
+
+// 3. Mixin de Centrado (Flexbox)
+@mixin centrar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// --- Aplicación de los Mixins ---
+
+.btn-success {
+    @include btn-structure;
+    @include btn-theme(#2ecc71);
+}
+
+.btn-danger {
+    @include btn-structure;
+    @include btn-theme(#e74c3c);
+}
+
+.btn-warning {
+    @include btn-structure;
+    @include btn-theme(#f1c40f);
+}
+
+// El reto pedía también estas clases específicas:
+.btn-primary {
+    @include btn-structure;
+    @include btn-theme(#3498db);
+}
+
+.box {
+    @include centrar-flex;
+    width: 300px;
+    height: 100px;
+    background: #ecf0f1;
+    margin: 20px auto;
+    border: 1px solid #bdc3c7;
+}

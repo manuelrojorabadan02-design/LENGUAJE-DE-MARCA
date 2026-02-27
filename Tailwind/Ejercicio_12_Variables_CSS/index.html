@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12: Modo Oscuro con CSS Puro</title>
+    <style>
+        /* 1. VARIABLES DE COLOR (MODO CLARO POR DEFECTO) */
+        :root {
+            --body-bg: #f4f4f4;
+            --card-bg: #ffffff;
+            --card-text: #333333;
+            --header-bg: #eeeeee;
+            --price-color: #008000;
+            --btn-bg: #0000ff;
+            --btn-text: #ffffff;
+            --border-color: #dddddd;
+        }
+
+        /* 2. REDEFINICIÓN DE VARIABLES (CUANDO EL CHECKBOX ESTÁ MARCADO) */
+        /* El selector #toggle:checked ~ .main-wrapper cambia las variables para todo lo que esté dentro */
+        #dark-mode-toggle:checked ~ .main-wrapper {
+            --body-bg: #121212;
+            --card-bg: #2c2c2c;
+            --card-text: #f4f4f4;
+            --header-bg: #3d3d3d;
+            --price-color: #90ee90;
+            --btn-bg: #4a90e2;
+            --border-color: #444444;
+        }
+
+        /* 3. ESTILOS BASE */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Ocultamos el checkbox real */
+        #dark-mode-toggle {
+            display: none;
+        }
+
+        /* Contenedor principal que reacciona a las variables */
+        .main-wrapper {
+            background-color: var(--body-bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            color: var(--card-text);
+        }
+
+        .instrucciones {
+            max-width: 500px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        /* 4. ESTILO DEL BOTÓN (LABEL) */
+        .theme-switch {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 30px;
+            transition: transform 0.2s active;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .theme-switch:active { transform: scale(0.95); }
+
+        /* Lógica para mostrar Luna o Sol según el estado */
+        #dark-mode-toggle:checked ~ .main-wrapper .btn-text-light { display: none; }
+        #dark-mode-toggle:not(:checked) ~ .main-wrapper .btn-text-dark { display: none; }
+
+        /* 5. TARJETA DE PRODUCTO */
+        .card {
+            width: 320px;
+            background-color: var(--card-bg);
+            color: var(--card-text);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            background-color: var(--header-bg);
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .price {
+            font-size: 2rem;
+            color: var(--price-color);
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            padding: 1.5rem;
+            text-align: center;
+            background-color: var(--card-bg);
+        }
+
+        .btn-buy {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-buy:hover { opacity: 0.9; }
+
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="dark-mode-toggle">
+
+    <div class="main-wrapper">
+
+        <div class="instrucciones">
+            <h2>Ejercicio 12: Variables CSS</h2>
+            <p>Haz clic en el botón de abajo para alternar los temas usando solo selectores de CSS.</p>
+        </div>
+
+        <label for="dark-mode-toggle" class="theme-switch">
+            <span class="btn-text-light">🌙 Activar Modo Oscuro</span>
+            <span class="btn-text-dark">☀️ Activar Modo Claro</span>
+        </label>
+
+        <div class="card">
+            <div class="card-header">
+                Producto Premium
+            </div>
+            <div class="card-body">
+                <p>Este es un producto increíble con características únicas. Fabricado con variables CSS de alta calidad.</p>
+                <div class="price">$99.99</div>
+            </div>
+            <div class="card-footer">
+                <button class="btn-buy">Comprar Ahora</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

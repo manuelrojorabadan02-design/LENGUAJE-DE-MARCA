@@ -1,0 +1,29 @@
+// Importa tus parciales aquí (No hace falta poner el guion bajo ni la extensión)
+@import 'variables';
+@import 'base';
+
+// Estilos específicos para este ejercicio
+header {
+    background-color: white;
+    padding: 2rem;
+    border-bottom: 5px solid $color-primario;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    h1 {
+        color: $color-primario;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+main {
+    margin-top: 20px;
+    text-align: center;
+    
+    p {
+        font-style: italic;
+        color: lighten($color-texto, 20%);
+    }
+}

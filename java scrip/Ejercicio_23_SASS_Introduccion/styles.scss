@@ -1,0 +1,39 @@
+// 1. Define Variables (Almacenan valores reutilizables)
+$color-principal: #3498db; // Un azul profesional
+$color-hover: #2980b9;
+$fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$espaciado: 20px;
+
+// 2. Usa Nesting (Anidamiento) para estructurar el código
+.container {
+    font-family: $fuente-base;
+    padding: $espaciado * 2; // SASS permite operaciones matemáticas sencillas
+    text-align: center;
+
+    h1 {
+        color: $color-principal;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: $espaciado;
+        padding: 10px 25px;
+        background-color: $color-principal;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+
+        // Uso del selector & para el estado :hover
+        &:hover {
+            background-color: $color-hover;
+        }
+    }
+}

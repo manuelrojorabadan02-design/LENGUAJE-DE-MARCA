@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19: Componentes Complejos (Airbnb Style)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 p-10 flex items-center justify-center min-h-screen">
+
+    <div class="max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-100">
+        
+        <div class="relative overflow-hidden">
+            <img class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Residencial Los Olivos">
+            
+            <div class="absolute top-4 right-4 bg-red-500 text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-lg uppercase tracking-wider">
+                En Venta
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Apartamento de Lujo</span>
+                    <h3 class="text-xl font-bold text-gray-900 truncate mt-1">Residencial Los Olivos</h3>
+                </div>
+                <span class="text-2xl font-extrabold text-blue-600">$450k</span>
+            </div>
+
+            <p class="text-gray-500 text-sm mb-5 flex items-center">
+                <span class="material-icons text-sm mr-1">place</span>
+                Av. Principal 123, Madrid, España
+            </p>
+
+            <div class="flex items-center justify-between text-sm text-gray-600 mb-6 border-t border-b border-gray-50 py-4">
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">bed</span>
+                    <span class="font-medium text-gray-800">3 Habs</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">bathtub</span>
+                    <span class="font-medium text-gray-800">2 Baños</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">square_foot</span>
+                    <span class="font-medium text-gray-800">120m²</span>
+                </div>
+            </div>
+
+            <div class="flex space-x-3">
+                <button class="flex-1 bg-blue-600 text-white font-bold py-3 rounded-xl hover:bg-blue-700 active:scale-95 transition-all shadow-md shadow-blue-200">
+                    Contactar
+                </button>
+                <button
+                    class="p-3 border border-gray-200 rounded-xl text-gray-400 hover:text-red-500 hover:border-red-500 hover:bg-red-50 active:scale-95 transition-all">
+                    <span class="material-icons">favorite_border</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

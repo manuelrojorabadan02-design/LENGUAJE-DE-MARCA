@@ -1,0 +1,81 @@
+/* 1. Definición de Variables (Modo Claro por defecto) */
+:root {
+    --card-bg: #ffffff;
+    --card-text: #333333;
+    --header-bg: #eeeeee;
+    --price-color: #008000;
+    --btn-bg: #0000ff;
+    --btn-text: #ffffff;
+    --body-bg: #f4f4f4;
+}
+
+/* 2. Redefinición de Variables cuando el checkbox está MARCADO */
+#dark-mode-toggle:checked ~ .container {
+    --card-bg: #2c2c2c;
+    --card-text: #f4f4f4;
+    --header-bg: #444444;
+    --price-color: #90ee90;
+    --btn-bg: #4a90e2;
+    --body-bg: #121212;
+}
+
+/* 3. Estilos de Aplicación */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: var(--body-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Ocultar el checkbox real */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Estilo del "Botón" (Label) */
+.theme-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--btn-bg);
+    background: var(--card-bg);
+    color: var(--card-text);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+/* Lógica para mostrar Luna o Sol */
+#dark-mode-toggle:checked ~ .container .moon { display: none; }
+#dark-mode-toggle:not(:checked) ~ .container .sun { display: none; }
+
+/* 4. Estilos de la Tarjeta (Usando las variables) */
+.card {
+    width: 300px;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.card-header { background-color: var(--header-bg); padding: 1rem; }
+.card-body { padding: 1rem; }
+.price { color: var(--price-color); font-size: 1.5rem; font-weight: bold; }
+.btn { 
+    background-color: var(--btn-bg); 
+    color: var(--btn-text); 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}

@@ -25,18 +25,20 @@ margin-bottom: 30px;
 font-style: italic;
 text-align: center;
 }
-.h2 {
+h2 {
 margin-bottom: 20px;
 border-bottom: 0.5px solid #918b8b50;
 padding-bottom: 5px;
 
 }
-.texto-rojo{
+.destacado{
 color: #ff0000;
 }
 
 .nota {
 background-color: #ffdf2c62;
+padding: 5px;
+
 }
 
 footer{
