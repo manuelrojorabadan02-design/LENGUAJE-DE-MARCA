@@ -1,0 +1,117 @@
+$primario: #8e44ad;
+$fondo: #ecf0f1;
+$exito: #2ecc71;
+$error: #e74c3c;
+$texto: #2c3e50;
+$borde-r: 6px;
+
+body {
+    background-color: $fondo;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: $borde-r;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+
+    h2 {
+        text-align: center;
+        color: $primario;
+        margin-bottom: 20px;
+    }
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: $texto;
+        font-weight: 500;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: $borde-r;
+        font-size: 1rem;
+        outline: none;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        box-sizing: border-box;
+
+        &:focus {
+            border-color: $primario;
+            box-shadow: 0 0 5px rgba(142, 68, 173, 0.3);
+        }
+
+        &.is-valid {
+            border-color: $exito;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%232ecc71"><path d="M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px;
+        }
+
+        &.is-invalid {
+            border-color: $error;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e74c3c"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 20px;
+            box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+        }
+    }
+
+    .mensaje-error {
+        display: none;
+        color: $error;
+        font-size: 0.85rem;
+        margin-top: 5px;
+
+        &.active {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+    }
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: $primario;
+    color: white;
+    border: none;
+    border-radius: $borde-r;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($primario, 10%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,116 @@
+// Variables
+$color-primario: #3498db;
+$bg-oscuro: #2c3e50;
+$texto-claro: #ecf0f1;
+$bg-claro: #f4f6f7;
+$sombra: 0 4px 6px rgba(0,0,0,0.1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: $bg-claro;
+    color: #333;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    transition: grid-template-columns 0.3s ease;
+
+    &.sidebar--oculto {
+        grid-template-columns: 0px 1fr;
+        
+        .sidebar {
+            overflow: hidden;
+            width: 0;
+        }
+    }
+}
+
+.sidebar {
+    background-color: $bg-oscuro;
+    color: $texto-claro;
+    width: 250px;
+    transition: width 0.3s ease;
+
+    &__logo {
+        padding: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: darken($bg-oscuro, 5%);
+    }
+
+    &__nav {
+        ul {
+            list-style: none;
+            
+            li a {
+                display: block;
+                padding: 15px 20px;
+                color: $texto-claro;
+                text-decoration: none;
+                transition: background 0.2s;
+
+                &:hover {
+                    background-color: $color-primario;
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $sombra;
+    z-index: 10;
+
+    &__menu-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $bg-oscuro;
+    }
+}
+
+.dashboard-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    grid-auto-rows: 150px;
+
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: $sombra;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $bg-oscuro;
+
+        &--main {
+            grid-column: 1 / -1;
+            grid-row: span 2;
+        }
+    }
+}

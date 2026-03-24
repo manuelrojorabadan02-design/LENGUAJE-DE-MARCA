@@ -1,0 +1,21 @@
+// 1. Define las variables de color
+$myColor:#e74c3c;
+// 2. Estilos para el contenedor
+
+// 3. Estilos anidados para la .card
+.card {
+    // Variable local, border, shadow...
+    border: 1px solid $myColor;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    &__img {
+        margin: 10px;
+    }
+    
+    &__content {
+        padding: 10px;
+    }
+    
+}
+
+// 4. Media Query para móviles (< 600px)

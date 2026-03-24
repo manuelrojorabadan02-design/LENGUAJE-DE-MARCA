@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">
+    <producto id="1">
+        <nombre>Laptop Gamer</nombre>
+        <precio>1200.50</precio>
+        <descripcion>Laptop de alto rendimiento para juegos.</descripcion>
+        <categoria>Electronica</categoria>
+    </producto>
+    <producto id="2">
+        <nombre>Smartphone 5G</nombre>
+        <precio>800.00</precio>
+        <descripcion>Último modelo con cámara de alta resolución.</descripcion>
+        <categoria>Electronica</categoria>
+    </producto>
+    <producto id="3">
+        <nombre>Silla Ergonómica</nombre>
+        <precio>150.75</precio>
+        <descripcion>Silla cómoda para largas jornadas de trabajo.</descripcion>
+        <categoria>Mobiliario</categoria>
+    </producto>
+    <producto id="4">
+        <nombre>Teclado Mecánico</nombre>
+        <precio>90.00</precio>
+        <descripcion>Teclado retroiluminado con switches azules.</descripcion>
+        <categoria>Perifericos</categoria>
+    </producto>
+    <producto id="5">
+        <nombre>Monitor 4K</nombre>
+        <precio>300.99</precio>
+        <descripcion>Monitor ultra nítido de 27 pulgadas.</descripcion>
+        <categoria>Electronica</categoria>
+    </producto>
+</catalogo>

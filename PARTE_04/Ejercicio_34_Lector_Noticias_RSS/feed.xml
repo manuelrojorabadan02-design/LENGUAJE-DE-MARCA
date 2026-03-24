@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="feed.xsd">
+    <channel>
+        <title>Noticias Tech de Hoy</title>
+        <link>http://www.tech-hoy.ejemplo.com</link>
+        <description>Las últimas noticias sobre tecnología y programación.</description>
+        
+        <item>
+            <title>Lanzamiento de HTML6</title>
+            <link>http://www.tech-hoy.ejemplo.com/lanzamiento-html6</link>
+            <author>Ana García</author>
+            <pubDate>2026-03-24</pubDate>
+            <description>Se han revelado los primeros borradores de la próxima especificación de HTML que promete revolucionar la sintaxis semántica.</description>
+        </item>
+        
+        <item>
+            <title>La IA domina el Frontend</title>
+            <link>http://www.tech-hoy.ejemplo.com/ia-frontend</link>
+            <author>Carlos López</author>
+            <pubDate>2026-03-23</pubDate>
+            <description>Modelos LLM ahora asisten directamente a los desarrolladores en tiempo real durante la concepción de UIs.</description>
+        </item>
+
+        <item>
+            <title>Node v28 y sus novedades</title>
+            <link>http://www.tech-hoy.ejemplo.com/node-v28</link>
+            <author>Laura Martínez</author>
+            <pubDate>2026-03-22</pubDate>
+            <description>El entorno de servidor JS llega con su versión 28 incluyendo mejoras drásticas de rendimiento en Single Thread.</description>
+        </item>
+        
+        <item>
+            <title>CSS Grid Nivel 3</title>
+            <link>http://www.tech-hoy.ejemplo.com/css-grid-v3</link>
+            <author>Marcos Ruiz</author>
+            <pubDate>2026-03-21</pubDate>
+            <description>Una mirada en profundidad a las nuevas características de maquetación tridimensional de los navegadores.</description>
+        </item>
+    </channel>
+</rss>

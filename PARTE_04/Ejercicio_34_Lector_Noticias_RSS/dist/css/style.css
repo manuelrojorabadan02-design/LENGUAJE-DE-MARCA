@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Oswald:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 5px solid #e74c3c;
+}
+.header__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.header__content h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.header__content p {
+  color: #ccc;
+  font-style: italic;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.article {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  border-top: 4px solid #333;
+}
+.article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-top-color: #e74c3c;
+}
+.article__title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 15px;
+}
+.article__title a {
+  text-decoration: none;
+  color: inherit;
+}
+.article__title a:hover {
+  color: #e74c3c;
+}
+.article__meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.article__meta span {
+  font-weight: bold;
+  color: #e74c3c;
+}
+.article__desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+.loader {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 50px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #777;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

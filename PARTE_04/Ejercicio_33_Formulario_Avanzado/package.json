@@ -1,0 +1,17 @@
+{
+  "name": "ejercicio_33_formulario_avanzado",
+  "version": "1.0.0",
+  "description": "## Objetivo Implementar un formulario de registro complejo con validaciones del lado del cliente utilizando JavaScript (expresiones regulares) y proporcionar retroalimentación visual al usuario utilizando SASS. Todo orquestado con Gulp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.98.0"
+  }
+}

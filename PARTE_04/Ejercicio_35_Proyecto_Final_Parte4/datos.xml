@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+    <vehiculo id="1">
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <anio>2022</anio>
+        <precio>22000</precio>
+        <tipo>Sedan</tipo>
+        <descripcion>Un sedan compacto y duradero, ideal para la ciudad y carretera.</descripcion>
+    </vehiculo>
+    <vehiculo id="2">
+        <marca>Ford</marca>
+        <modelo>Mustang</modelo>
+        <anio>2023</anio>
+        <precio>45000</precio>
+        <tipo>Deportivo</tipo>
+        <descripcion>Muscle car americano con motor V8 de alto desempeño.</descripcion>
+    </vehiculo>
+    <vehiculo id="3">
+        <marca>Tesla</marca>
+        <modelo>Model 3</modelo>
+        <anio>2026</anio>
+        <precio>42000</precio>
+        <tipo>Electrico</tipo>
+        <descripcion>Vehículo eléctrico moderno con autonomía envidiable y tecnología punta.</descripcion>
+    </vehiculo>
+    <vehiculo id="4">
+        <marca>Jeep</marca>
+        <modelo>Wrangler</modelo>
+        <anio>2021</anio>
+        <precio>35000</precio>
+        <tipo>SUV</tipo>
+        <descripcion>Todo terreno 4x4 perfecto para la aventura Off-Road.</descripcion>
+    </vehiculo>
+    <vehiculo id="5">
+        <marca>Honda</marca>
+        <modelo>Civic</modelo>
+        <anio>2024</anio>
+        <precio>25000</precio>
+        <tipo>Sedan</tipo>
+        <descripcion>Coche confiable con diseño deportivo y excelente economía de combustible.</descripcion>
+    </vehiculo>
+</concesionario>

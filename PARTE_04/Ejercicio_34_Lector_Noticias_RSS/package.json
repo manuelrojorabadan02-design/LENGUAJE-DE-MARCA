@@ -1,0 +1,17 @@
+{
+  "name": "ejercicio_34_lector_noticias_rss",
+  "version": "1.0.0",
+  "description": "## Objetivo Cargar un archivo simulado de noticias (Feed XML equivalente a un RSS de un blog) y pintar la información usando JavaScript y técnicas avanzadas de CSS compiladas con SASS y Gulp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.98.0"
+  }
+}

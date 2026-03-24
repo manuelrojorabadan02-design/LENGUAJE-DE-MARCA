@@ -1,0 +1,60 @@
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.vehiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+
+    .vehiculo-card {
+        background-color: $color-blanco;
+        border-radius: $radio-borde;
+        padding: 20px;
+        box-shadow: $sombra-caja;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-top: 4px solid $color-primario;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .marca-modelo {
+            font-size: 1.4rem;
+            color: $color-secundario;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .precio {
+            font-size: 1.5rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+
+            span {
+                background: $color-fondo;
+                padding: 5px 10px;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: $color-secundario;
+            }
+        }
+
+        .desc {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    }
+}

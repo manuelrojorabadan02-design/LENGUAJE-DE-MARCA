@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ejercicio 31</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar__logo">Mi Dashboard</div>
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Analíticas</a></li>
+                    <li><a href="#">Configuración</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="header">
+                <button id="menu-toggle" class="header__menu-btn">☰</button>
+                <div class="header__user">Bienvenido, Usuario</div>
+            </header>
+            <main class="dashboard-grid">
+                <article class="card card--main">Tarjeta Principal</article>
+                <article class="card">Métrica 1</article>
+                <article class="card">Métrica 2</article>
+                <article class="card">Métrica 3</article>
+                <article class="card">Métrica 4</article>
+            </main>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&family=Oswald:wght@400;700&display=swap');
+
+// Variables
+$color-acento: #e74c3c;
+$bg-cuerpo: #f9f9f9;
+$color-texto: #333;
+$borde-color: #ddd;
+
+// Mixins
+@mixin typo-titular {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@mixin typo-cuerpo {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-cuerpo;
+    color: $color-texto;
+    @include typo-cuerpo;
+}
+
+.header {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid $color-acento;
+
+    &__content {
+        max-width: 800px;
+        margin: 0 auto;
+
+        h1 {
+            @include typo-titular;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            color: #ccc;
+            font-style: italic;
+        }
+    }
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.article {
+    background: white;
+    border: 1px solid $borde-color;
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border-top: 4px solid #333;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-top-color: $color-acento;
+    }
+
+    &__title {
+        @include typo-titular;
+        font-size: 1.5rem;
+        color: #111;
+        margin-bottom: 15px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                color: $color-acento;
+            }
+        }
+    }
+
+    &__meta {
+        font-size: 0.85rem;
+        color: #777;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $borde-color;
+        padding-bottom: 10px;
+
+        span {
+            font-weight: bold;
+            color: $color-acento;
+        }
+    }
+
+    &__desc {
+        font-size: 1rem;
+        color: #555;
+    }
+}
+
+.loader {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px;
+    @include typo-titular;
+    color: #777;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
