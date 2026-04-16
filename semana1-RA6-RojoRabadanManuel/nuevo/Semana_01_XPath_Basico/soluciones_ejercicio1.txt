@@ -1,4 +1,3 @@
-
 /* EJERCICIO 1: RUTAS BÁSICAS */
 
 -- 1. Rutas absolutas
@@ -7,12 +6,10 @@
 
 /catalogo/libro
 
-Resultado:
 1 El Imperio Final Brandon Sanderson 19.95 12
 2 Java para Novatos Juan Perez 25.50 5
 3 SQL Server Avanzado Maria Gomez 30.00 0
 4 Breve Historia del Tiempo Stephen Hawking 15.00 3
-
 
 -- 2. Forma corta descendente (//)
 -- TODO: Selecciona todos los elementos <titulo> sin importar a qué altura jerárquica estén.
@@ -20,7 +17,6 @@ Resultado:
 
 //titulo
 
-Resultado:
 1 El Imperio Final
 2 Java para Novatos
 3 SQL Server Avanzado
@@ -30,10 +26,9 @@ Resultado:
 -- TODO: Extrae explícitamente y de forma directa el atributo "categoria" de todos los libros.
 -- Pista: Desciende hacia el libro y luego utiliza la arroba (@) para referirte al nombre de atributo.
 
-/catalogo/libro/@categoria
+//@categoria
 
-Resultado:
-1 Fantasia
-2 Programacion
-3 Programacion
-4 Ciencia
+1 ficcion
+2 programacion
+3 programacion
+4 historia

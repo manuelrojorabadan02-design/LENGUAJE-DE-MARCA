@@ -6,7 +6,6 @@
 
 /catalogo/libro[@id='L02']
 
-Resultado:
 1 Java para Novatos Juan Perez 25.50 5
 
 -- 2. Filtrado por valor numérico
@@ -15,7 +14,6 @@ Resultado:
 
 /catalogo/libro[precio>20]/titulo
 
-Resultado:
 1 Java para Novatos
 2 SQL Server Avanzado
 
@@ -25,5 +23,4 @@ Resultado:
 
 /catalogo/libro[@categoria='programacion' and stock>0]
 
-Resultado:
 1 Java para Novatos Juan Perez 25.50 5
